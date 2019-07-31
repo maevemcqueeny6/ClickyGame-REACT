@@ -68,7 +68,7 @@ class App extends Component {
 
 
   handleBtnClick = (id) => {
-    var foundID = (this.state.whitemen.find((whiteman) =>
+    let foundID = (this.state.whitemen.find((whiteman) =>
       (whiteman.id === id)
     ))
     console.log(foundID);
