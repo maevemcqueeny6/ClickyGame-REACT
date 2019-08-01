@@ -7,6 +7,8 @@ import WhiteWomen from './components/WhiteWomen';
 
 
 import './App.css';
+import WomenSubhead from './components/layout/WomenSubhead';
+import MenSubhead from './components/layout/MenSubhead';
 
 class App extends Component {
   state = {
@@ -194,7 +196,7 @@ class App extends Component {
     this.setState({
       whitemen: this.state.whitemen.map((whiteman) => {
         if (whiteman.clicked === true) {
-          whiteman.clicked =! whiteman.clicked;
+          whiteman.clicked = !whiteman.clicked;
         }
         return (whiteman);
       })
@@ -252,7 +254,7 @@ class App extends Component {
     this.setState({
       whitewomen: this.state.whitewomen.map((whitewoman) => {
         if (whitewoman.clicked === true) {
-          whitewoman.clicked =! whitewoman.clicked;
+          whitewoman.clicked = !whitewoman.clicked;
         }
         return (whitewoman);
       })
@@ -275,31 +277,37 @@ class App extends Component {
   }
 
 
-  
+
 
 
   render() {
     return (
       <Router>
-      <div className="App">
+        <div className="App">
           <Header
             count={this.state.count}
           />
           <Route exact path="/" render={(props) => (
-          <WhiteMen
-            whitemen={this.state.whitemen}
-            handleBtnClick={this.handleBtnClick}
-          />
+            <React.Fragment>
+              <MenSubhead />
+              <WhiteMen
+                whitemen={this.state.whitemen}
+                handleBtnClick={this.handleBtnClick}
+              />
+            </React.Fragment>
           )} />
           <Route path="/FOX" render={(props) => (
-            <WhiteWomen
-              whitewomen={this.state.whitewomen}
-              femHandleBtnClick={this.femHandleBtnClick}
+            <React.Fragment>
+              <WomenSubhead />
+              <WhiteWomen
+                whitewomen={this.state.whitewomen}
+                femHandleBtnClick={this.femHandleBtnClick}
               />
+            </React.Fragment>
           )}
           />
 
-      </div>
+        </div>
       </Router>
     );
   }
