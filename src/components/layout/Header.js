@@ -8,7 +8,7 @@ function Header(count){
         <header style={headerStyle}>
             <h1>Memory Game</h1>
             <h3>Try not to click the same photo twice!</h3>
-            <Link style={linkStyle} to="/">SCOTUS  </Link> | <Link style={linkStyle} to="/FOX">  FOX</Link>
+            <Link style={linkStyle} to="/">Easy  </Link> | <Link style={linkStyle} to="/FOX">Hard</Link>
 
             <h3>Score:  {count.count} </h3>
         </header>
