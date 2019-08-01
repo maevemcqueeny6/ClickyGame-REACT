@@ -71,6 +71,7 @@ class App extends Component {
       {
         id: 1,
         photo: require('./components/photos/IMG_6053 3.jpg'),
+        name: 'Lewis Powell',
         clicked: false,
       },
       {
@@ -81,52 +82,61 @@ class App extends Component {
       {
         id: 3,
         photo: require('./components/photos/IMG_6053 4.jpg'),
+        name: 'Harry Blackmun',
         clicked: false,
       },
       {
         id: 4,
         photo: require('./components/photos/IMG_6053 5.jpg'),
+        name: 'John Marshall Harlan II',
         clicked: false,
       },
       {
         id: 5,
         photo: require('./components/photos/IMG_6053 6.jpg'),
+        name: 'Abe Fortas',
         clicked: false,
       },
       {
         id: 7,
         photo: require('./components/photos/IMG_6053 7.jpg'),
+        name: 'John Paul Stevens',
         clicked: false,
       },
       {
         id: 8,
         photo: require('./components/photos/IMG_6053 8.jpg'),
+        name: 'John William Rehnquist',
         clicked: false,
       },
       {
         id: 9,
         photo: require('./components/photos/IMG_6053 9.jpg'),
+        name: 'Warren E Burger',
         clicked: false,
       },
       {
         id: 10,
         photo: require('./components/photos/IMG_6053 10.jpg'),
+        name: 'Warren E Burger',
         clicked: false,
       },
       {
         id: 11,
         photo: require('./components/photos/IMG_6053 11.jpg'),
+        name: 'Warren E Burger',
         clicked: false,
       },
       {
         id: 12,
         photo: require('./components/photos/IMG_6053 12.jpg'),
+        name: 'Warren E Burger',
         clicked: false,
       },
       {
         id: 13,
         photo: require('./components/photos/IMG_6053.jpg'),
-        name: 'Warren E Burger',
+        name: 'Tiffany Trump',
         clicked: false,
       },
     ]
@@ -278,7 +288,6 @@ class App extends Component {
           <Route exact path="/" render={(props) => (
           <WhiteMen
             whitemen={this.state.whitemen}
-            // markClicked={(this.markClicked)}
             handleBtnClick={this.handleBtnClick}
           />
           )} />
