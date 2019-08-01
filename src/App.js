@@ -44,12 +44,6 @@ class App extends Component {
         name: 'Abe Fortas',
         clicked: false,
       },
-      // {
-      //   id: 6,
-      //   photo: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg',
-      //   name: 'Potter Stewart',
-      //   clicked: false,
-      // },
       {
         id: 7,
         photo: 'https://www.nysfda.org/images/PageImages/2019Additions/Justice_John_Paul_Stevens_III.jpg',
@@ -73,18 +67,19 @@ class App extends Component {
       {
         id: 1,
         photo: require('./components/photos/IMG_6053 3.jpg'),
-        name: 'Lewis Powell',
+        name: 'Britney',
         clicked: false,
       },
       {
         id: 2,
         photo: require('./components/photos/IMG_6053 2.jpg'),
+        name: 'Tiffany',
         clicked: false,
       },
       {
         id: 3,
         photo: require('./components/photos/IMG_6053 4.jpg'),
-        name: 'Harry Blackmun',
+        name: 'Crystal',
         clicked: false,
       },
       {
@@ -96,43 +91,43 @@ class App extends Component {
       {
         id: 5,
         photo: require('./components/photos/IMG_6053 6.jpg'),
-        name: 'Abe Fortas',
+        name: 'Abbi',
         clicked: false,
       },
       {
         id: 7,
         photo: require('./components/photos/IMG_6053 7.jpg'),
-        name: 'John Paul Stevens',
+        name: 'Toni',
         clicked: false,
       },
       {
         id: 8,
         photo: require('./components/photos/IMG_6053 8.jpg'),
-        name: 'John William Rehnquist',
+        name: 'Ann',
         clicked: false,
       },
       {
         id: 9,
         photo: require('./components/photos/IMG_6053 9.jpg'),
-        name: 'Warren E Burger',
+        name: 'Margaret',
         clicked: false,
       },
       {
         id: 10,
         photo: require('./components/photos/IMG_6053 10.jpg'),
-        name: 'Warren E Burger',
+        name: 'Bridget',
         clicked: false,
       },
       {
         id: 11,
         photo: require('./components/photos/IMG_6053 11.jpg'),
-        name: 'Warren E Burger',
+        name: 'Jessica',
         clicked: false,
       },
       {
         id: 12,
         photo: require('./components/photos/IMG_6053 12.jpg'),
-        name: 'Warren E Burger',
+        name: 'Ivanka',
         clicked: false,
       },
       {
