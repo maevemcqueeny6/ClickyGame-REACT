@@ -145,7 +145,6 @@ class App extends Component {
     let foundID = (this.state.whitemen.find((whiteman) =>
       (whiteman.id === id)
     ))
-    console.log(foundID);
     this.gameLogic(foundID);
     this.shuffle();
   }
@@ -163,12 +162,10 @@ class App extends Component {
 
   gameLogic = (guy) => {
     if (guy.clicked === false) {
-      console.log("he has not been clicked yet")
       this.markClicked(guy.id);
       this.incrementScore();
     }
     else {
-      console.log("he has been clicked")
       this.resetScoreZero();
       this.resetClicked();
       alert("You lose!");
@@ -177,7 +174,6 @@ class App extends Component {
 
   markClicked = (id) => {
     this.setState({
-
       whitemen: this.state.whitemen.map((whiteman) => {
         if (whiteman.id === id) {
           whiteman.clicked = !whiteman.clicked;
@@ -203,7 +199,6 @@ class App extends Component {
     let foundID = (this.state.whitewomen.find((whitewoman) =>
       (whitewoman.id === id)
     ))
-    console.log(foundID);
     this.femGameLogic(foundID);
     this.femShuffle();
   }
@@ -221,12 +216,10 @@ class App extends Component {
 
   femGameLogic = (gal) => {
     if (gal.clicked === false) {
-      console.log("she has not been clicked yet")
       this.femMarkClicked(gal.id);
       this.incrementScore();
     }
     else {
-      console.log("he has been clicked")
       this.resetScoreZero();
       this.femResetClicked();
       alert("You lose!");
@@ -235,7 +228,6 @@ class App extends Component {
 
   femMarkClicked = (id) => {
     this.setState({
-
       whitewomen: this.state.whitewomen.map((whitewoman) => {
         if (whitewoman.id === id) {
           whitewoman.clicked = !whitewoman.clicked;
@@ -262,7 +254,6 @@ class App extends Component {
     this.setState({
       count: this.state.count + 1
     })
-    console.log(this.state.count)
   }
 
   resetScoreZero = () => {
@@ -270,10 +261,6 @@ class App extends Component {
       count: 0
     });
   }
-
-
-
-
 
   render() {
     return (
