@@ -3,7 +3,7 @@ import React from 'react';
 function WomenSubhead(){
     return(
         <header>
-            <h3>The many faces of Fox News</h3>
+            <h3>The many faces of the news</h3>
         </header>
     )
 }
