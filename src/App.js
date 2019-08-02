@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/layout/Header';
 import WhiteMen from './components/WhiteMen';
@@ -264,7 +264,7 @@ class App extends Component {
 
   render() {
     return (
-      <HashRouter basename="/">
+      <Router>
         <div className="App">
           <Header
             count={this.state.count}
@@ -290,7 +290,7 @@ class App extends Component {
           />
 
         </div>
-      </HashRouter>
+      </Router>
     );
   }
 }
