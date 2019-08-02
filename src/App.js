@@ -269,7 +269,7 @@ class App extends Component {
           <Header
             count={this.state.count}
           />
-          <Route exact basename="/" render={(props) => (
+          <Route exact path="/" render={(props) => (
             <React.Fragment>
               <MenSubhead />
               <WhiteMen
@@ -278,7 +278,7 @@ class App extends Component {
               />
             </React.Fragment>
           )} />
-          <Route basename="/FOX" render={(props) => (
+          <Route path="/FOX" render={(props) => (
             <React.Fragment>
               <WomenSubhead />
               <WhiteWomen
