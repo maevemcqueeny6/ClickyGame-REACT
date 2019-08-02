@@ -10,7 +10,7 @@ import './App.css';
 import WomenSubhead from './components/layout/WomenSubhead';
 import MenSubhead from './components/layout/MenSubhead';
 
-const App = () => {
+class App extends Component {
   state = {
     count: 0,
     whitemen: [
@@ -264,12 +264,12 @@ const App = () => {
 
   render() {
     return (
-      <Router>
+      <Router basename="/ClickyGame-REACT">
         <div className="App">
           <Header
             count={this.state.count}
           />
-          <Route exact path="/" component={IndexPage} render={(props) => (
+          <Route exact path={"/"} render={(props) => (
             <React.Fragment>
               <MenSubhead />
               <WhiteMen
@@ -278,7 +278,7 @@ const App = () => {
               />
             </React.Fragment>
           )} />
-          <Route path="/FOX" component={AltIndex} render={(props) => (
+          <Route path={"/FOX"} render={(props) => (
             <React.Fragment>
               <WomenSubhead />
               <WhiteWomen
