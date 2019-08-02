@@ -10,7 +10,7 @@ import './App.css';
 import WomenSubhead from './components/layout/WomenSubhead';
 import MenSubhead from './components/layout/MenSubhead';
 
-class App extends Component {
+const App = () => {
   state = {
     count: 0,
     whitemen: [
