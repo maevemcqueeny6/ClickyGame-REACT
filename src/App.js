@@ -269,7 +269,7 @@ class App extends Component {
           <Header
             count={this.state.count}
           />
-          <Route exact path="/" render={(props) => (
+          <Route exact path={process.env.PUBLIC_URL + '/'} render={(props) => (
             <React.Fragment>
               <MenSubhead />
               <WhiteMen
@@ -278,7 +278,7 @@ class App extends Component {
               />
             </React.Fragment>
           )} />
-          <Route path="/FOX" render={(props) => (
+          <Route path={process.env.PUBLIC_URL + '/FOX'} render={(props) => (
             <React.Fragment>
               <WomenSubhead />
               <WhiteWomen
