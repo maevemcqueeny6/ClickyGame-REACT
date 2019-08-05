@@ -12,7 +12,7 @@ class WhiteWoman extends Component {
     render(){
     
             return (
-                <img src={ this.props.whitewoman.photo } alt={ this.props.whitewoman.name} style={this.getStyle()} onClick={this.props.femHandleBtnClick.bind(this, this.props.whitewoman.id)}></img>
+                <img src={ this.props.whitewoman.photo } alt={ this.props.whitewoman.name} style={this.getStyle()} onClick={this.props.femHandleBtnClick.bind(this, this.props.whitewoman.id)} class="button"></img>
             )
     
     }
