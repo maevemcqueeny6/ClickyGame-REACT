@@ -14,9 +14,7 @@ class WhiteMan extends Component {
     render(){
     
             return (
-                <button class="button" onClick={this.props.handleBtnClick.bind(this, this.props.whiteman.id)}>
-                <img src={ this.props.whiteman.photo } alt={ this.props.whiteman.name} style={this.getStyle()}></img>
-                </button>
+                <img src={ this.props.whiteman.photo } alt={ this.props.whiteman.name} style={this.getStyle()} onClick={this.props.handleBtnClick.bind(this, this.props.whiteman.id)}></img>
             )
     
     }
