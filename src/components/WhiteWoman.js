@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Button.css';
 
 class WhiteWoman extends Component {
     getStyle = () => {
@@ -11,7 +12,7 @@ class WhiteWoman extends Component {
     render(){
     
             return (
-                <button onClick={this.props.femHandleBtnClick.bind(this, this.props.whitewoman.id)}>
+                <button class="button" onClick={this.props.femHandleBtnClick.bind(this, this.props.whitewoman.id)}>
                 <img src={ this.props.whitewoman.photo } alt={ this.props.whitewoman.name} style={this.getStyle()}></img>
                 </button>
             )
