@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../Button.css'
-
 import PropTypes from 'prop-types';
 
 class WhiteMan extends Component {
@@ -14,7 +12,7 @@ class WhiteMan extends Component {
     render(){
     
             return (
-                <img src={ this.props.whiteman.photo } alt={ this.props.whiteman.name} style={this.getStyle()} onClick={this.props.handleBtnClick.bind(this, this.props.whiteman.id)} class="button"></img>
+                <img src={ this.props.whiteman.photo } alt={ this.props.whiteman.name} style={this.getStyle()} onClick={this.props.handleBtnClick.bind(this, this.props.whiteman.id)}></img>
             )
     
     }

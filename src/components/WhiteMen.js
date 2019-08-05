@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import WhiteMan from './WhiteMan';
+import '../Button.css'
+
 import PropTypes from 'prop-types';
 
 class WhiteMen extends Component {
@@ -7,7 +9,7 @@ class WhiteMen extends Component {
     render (){
        
         return this.props.whitemen.map((whiteman) => (
-            <WhiteMan key= { whiteman.id} whiteman={whiteman} handleBtnClick={ this.props.handleBtnClick }/>
+            <WhiteMan class="button" key= { whiteman.id} whiteman={whiteman} handleBtnClick={ this.props.handleBtnClick }/>
         ))
 
     }
