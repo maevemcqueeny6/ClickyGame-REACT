@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 class WhiteMan extends Component {
     getStyle = () => {
         return {
-            width: '300px',
-            height: '300px'
+            width: '35vh',
+            height: '35vh'
         }
     }
 

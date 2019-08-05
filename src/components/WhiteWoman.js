@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class WhiteWoman extends Component {
     getStyle = () => {
         return {
-            width: '210px',
-            height: '210px'
+            width: '25vh',
+            height: '25vh'
         }
     }
 
